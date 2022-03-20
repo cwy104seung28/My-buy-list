@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif,"微軟正黑體";
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8859bd;
+}
+
+body #buy-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 20px;
+  border: solid 4px #181818;
+  background-color: #f5f5f5;
+}
+
+body #buy-list h1 {
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e95fa4;
+  color: #f5f5f5;
+  border-bottom: solid 3px #181818;
+}
+
+body #buy-list .buy-items {
+  padding: 10px;
+  list-style: none;
+  border: solid 3px #181818;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+body #buy-list .buy-items .add-btn {
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body #buy-list .buy-items .add-btn:hover {
+  background-color: #181818;
+  color: #f5f5f5;
+}
+
+body #buy-list #items-list {
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body #buy-list #items-list .buy-item {
+  padding: 10px;
+  list-style: none;
+  border: solid 3px #181818;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+body #buy-list #items-list .buy-item .price {
+  display: inline-block;
+  position: absolute;
+  padding: 0 8px;
+  right: 50px;
+  background-color: #ebc887;
+}
+
+body #buy-list #items-list .buy-item .price::before {
+  content: "$ ";
+}
+
+body #buy-list #items-list .buy-item .del-btn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body #buy-list #items-list .buy-item .del-btn:hover {
+  background-color: #181818;
+  color: #f5f5f5;
+}
+
+body #buy-list #items-list .total {
+  background-color: #e95fa4;
+  color: #f5f5f5;
+}
+
+body #buy-list input {
+  width: 100px;
+  border: solid 3px #181818;
+  padding: 2px;
+}
+/*# sourceMappingURL=style.css.map */
